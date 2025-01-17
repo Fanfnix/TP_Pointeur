@@ -8,3 +8,14 @@ void displayMenus(const struct Application * app) {
     }
     printf("Choisissez une option (0 pour quitter) : ");
 }
+
+void runApplication(const struct Application * app) {
+    int choix = -1;
+    while (choix != 0) {
+        displayMenus(app);
+        scanf("%d", &choix);
+        if (choix != 0) {
+            printf("Vous aves choisi : %s\n", (*app).menus[choix].option);
+        }
+    }
+}

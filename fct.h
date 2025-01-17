@@ -12,5 +12,6 @@ struct Application {
 };
 
 void displayMenus(const struct Application * app);
+void runApplication(const struct Application * app);
 
 #endif

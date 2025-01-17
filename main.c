@@ -7,7 +7,7 @@ int main() {
 
     struct Application photoApp = {"Photo", photoMenus, 2};
 
-    displayMenus(&photoApp);
+    runApplication(&photoApp);
 
     return 0;
 }
