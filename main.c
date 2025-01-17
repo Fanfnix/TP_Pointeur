@@ -3,11 +3,11 @@
 
 int main() {
 
-    int min = 0;
-    int max = 0;
-    int tableau[] = {10, 2, 8, -7, 15, 2};
-    min_max(tableau, 6, &min, &max);
-    printf("Min = %d\nMax = %d", min, max);
+    struct Menu photoMenus[] = {"Regarder une photo", "Prendre une photo"};
+
+    struct Application photoApp = {"Photo", photoMenus, 2};
+
+    displayMenus(&photoApp);
 
     return 0;
 }
