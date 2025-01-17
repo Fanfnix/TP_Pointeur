@@ -3,13 +3,11 @@
 
 int main() {
 
-    int a = 2;
-    printf("%p\n", &a);
-    int * p = &a;
-    printf("%p\n", p);
-    printf("%p\n", &p);
-    *p = 5;
-    printf("%d\n", a);
+    int min = 0;
+    int max = 0;
+    int tableau[] = {10, 2, 8, -7, 15, 2};
+    min_max(tableau, 6, &min, &max);
+    printf("Min = %d\nMax = %d", min, max);
 
     return 0;
 }
