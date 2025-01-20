@@ -13,6 +13,8 @@ struct Application {
 
 void displayMenus(const struct Application * app);
 void runApplication(const struct Application * app);
-void runPhone(const struct Application * app1, const struct Application * app2);
+void runPhone(struct Application * app1, struct Application * app2);
+void updateMenus(struct Application * app, int index, const char * newOption);
+void updateApplication(struct Application * app, const char * newName, struct Menu * newMenus, int newNb_menus);
 
 #endif
